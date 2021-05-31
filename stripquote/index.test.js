@@ -1,12 +1,12 @@
 const stripQuotes = require('./');
 
-test('remove the quotes as expected', () => {
+test('strip the quotes as expected', () => {
   expect(
     stripQuotes(`"I'm" a sentence "with' 'simple quote' "and" "double quote"`)
   ).toBe(`I'm a sentence with simple quote and double quote`);
 });
 
-test('remove unicode quotes as expected', () => {
+test('strip unicode quotes as expected', () => {
   expect(
     stripQuotes(
       `'quotation' "quotation" ’quotation´ ‘quotation’ ‘quotation’ “quotation”`

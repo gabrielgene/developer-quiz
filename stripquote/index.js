@@ -1,7 +1,8 @@
 /**
- * remove quotes from the beginning or end of words,
- * considering unicode quotes https://www.cl.cam.ac.uk/~mgk25/ucs/quotes.html
- * disregarding quotes in the middle in words like I'm, don't...
+ * Strip quotes from text when the is being used as quotation but keep 
+ * quotes that are part of the words.
+ * 
+ * Considering unicode quotes https://www.cl.cam.ac.uk/~mgk25/ucs/quotes.html
  *
  * @param {string} text - A text param = "I'm a "quote""
  * @return {string} A formatted text = "I'm a quote"
