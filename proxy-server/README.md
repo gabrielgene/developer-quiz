@@ -37,5 +37,15 @@ function logger() {
 module.exports = logger;
 ```
 
+## Installation
 
+```bash
+yarn install
+```
+
+## Running tests
+
+```bash
+yarn test
+```
 
