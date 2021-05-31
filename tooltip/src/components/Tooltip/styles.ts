@@ -26,6 +26,7 @@ const leftPlacementStyle = `
   transform: translate(0, -50%);
 `;
 
+// Properties with 15% and 85% are better aligned with the main element
 const TooltipStyleBasedOnPlacement = {
   top: `
     left: 50%;
@@ -56,7 +57,7 @@ const TooltipStyleBasedOnPlacement = {
     ${rightPlacementStyle}
   `,
   'right-start': `
-    top: 15%;
+    top: 15%; 
     ${rightPlacementStyle}
   `,
   'right-end': `
@@ -77,6 +78,7 @@ const TooltipStyleBasedOnPlacement = {
   `,
 };
 
+// The arrow in the proportion of 80% and 20% is better aligned in relation to the tooltip
 const ArrowStyleBasedOnPlacement = {
   top: `
     left: 50%;
