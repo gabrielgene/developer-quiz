@@ -1,4 +1,4 @@
 # Deskpass-quiz
 
 
-- [Strip Quotes](https://github.com/gabrielgene/deskpass-quiz/stripquote)
+- [Strip Quotes](https://github.com/gabrielgene/deskpass-quiz/tree/main/stripquote)
