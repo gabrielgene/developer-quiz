@@ -9,8 +9,8 @@ yarn install
 ## Usage
 
 ```javascript
-removeQuotes(`"I'm" a setence "with' 'quote'`) 
-// returns "I'm a setence with quote"
+removeQuotes(`"I'm" a sentence "with' 'quote'`) 
+// returns "I'm a sentence with quote"
 ```
 
 ## Running tests
