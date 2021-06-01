@@ -1,9 +1,11 @@
 # Proxy Server
 
-## Roadmap
+## Next steps
 - Implement specific plugins by upstreams
 
 ## config API
+
+To change the path of the configuration file just set a new path exporting the environment variable PROXYCONFIG
 
 ```javascript
 const logger = require('./plugins/logger');
@@ -44,6 +46,12 @@ module.exports = logger;
 
 ```bash
 yarn install
+```
+
+## Running proxy server
+
+```bash
+yarn start
 ```
 
 ## Running tests
