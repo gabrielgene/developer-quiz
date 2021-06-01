@@ -71,5 +71,5 @@ it('should handle wrong auth', async () => {
     .get('/pokemon/1')
     .set({ Authorization: '1234' });
 
-  expect(response.status).toBe(500);
+  expect(response.status).toBe(401);
 });
