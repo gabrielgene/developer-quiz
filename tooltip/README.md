@@ -14,7 +14,7 @@
 | children | React.Element | child in which the tooltip will be rendered. |
 
 
-## Roadmap
+## Next steps
 + Behaviors:
   - FLIPPING
     + Scroll the container (or the whole page) to see the tooltip flip to the opposite side once it's about to overflow the visible area. Once enough space is detected on its preferred side, it will flip back.
