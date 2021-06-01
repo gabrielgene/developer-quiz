@@ -26,6 +26,20 @@ it('should proxy to hookbin', async () => {
   expect(response.body).toEqual({ success: true });
 });
 
+it('should proxy to hookbin with html return', async () => {
+  nock('https://hookb.in/3OZj819xd0HEwwjBl0za')
+    .defaultReplyHeaders({
+      'test-header': 'works',
+      'Content-Type': 'text/html',
+    })
+    .get('/')
+    .reply(200, '<h1>Test</h1>');
+
+  const response = await request(app(testConfig)).get('/hookbin');
+  expect(response.header['test-header']).toBe('works');
+  expect(response.text).toBe('<h1>Test</h1>');
+});
+
 it('should handle error', async () => {
   nock('https://hookb.in/3OZj819xd0HEwwjBl0za')
     .defaultReplyHeaders({
