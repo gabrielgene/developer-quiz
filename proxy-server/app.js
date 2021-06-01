@@ -31,7 +31,10 @@ function application(config) {
           url: `${baseUrl}/${reqUrl}`,
           params: url.query,
           data: req.body, // https://github.com/chimurai/http-proxy-middleware
-          headers: { ...req.headers, host: null }, // remove host to handle external apis errors
+          headers: {
+            ...req.headers,
+            host: req.headers.host === 'localhost:3000' ? '' : req.headers.host, // handle https errors with localhost
+          },
         });
 
         const headers = { ...response.headers, ...req.headers };
