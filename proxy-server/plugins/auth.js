@@ -8,7 +8,8 @@ function auth(secret) {
     } else {
       jwt.verify(token, secret, (err, decoded) => {
         if (err) {
-          throw err;
+          console.error(err);
+          res.status(401).send('Unauthorized');
         }
         return decoded.testToken;
       });
